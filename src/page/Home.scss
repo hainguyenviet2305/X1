@@ -1,0 +1,367 @@
+.home {
+  position: relative;
+  background: #29057a;
+  color: white;
+  padding-left: 40px;
+  overflow: hidden;
+  height: 100vh;
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    height: 100%;
+
+    .intro-title {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translate(-50%, -20%);
+      text-align: center;
+    }
+
+    .intro-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 160px;
+
+      h1 {
+        font-size: 1.8rem; // Kích thước chữ lớn hơn
+        font-weight: bold; // Chữ đậm
+        margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
+        line-height: 1.5;
+        padding-right: 140px;
+      }
+
+      p {
+        font-size: 1.2rem; // Kích thước chữ nhỏ hơn
+        font-weight: normal; // Chữ thường
+        margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
+        line-height: 1.5; // Chiều cao dòng
+        padding-right: 140px;
+      }
+    }
+    .intro-img {
+      position: absolute;
+      left: -140px;
+      cursor: pointer; // Thêm thuộc tính này để thay đổi con trỏ chuột
+    }
+
+    .intro-text {
+      max-width: 50%;
+      margin-left: 30px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .intro-image {
+      max-width: 50%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.second-section {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #7438f8;
+
+  .second-title {
+    margin-bottom: 2rem;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+
+    .card1 .card2 .card3 {
+      border-radius: 10px;
+      padding: 1rem;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+}
+
+.third-section {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #29057a; // Màu nền
+
+  .third-title {
+    margin-top: 60px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .third-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .left {
+      flex: 1;
+      img {
+        max-width: 100%;
+        height: auto;
+        width: 100%; // Điều chỉnh kích thước ảnh
+      }
+    }
+
+    .info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      flex: 1;
+
+      .info-card {
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 100%;
+          height: auto;
+          width: 100%; // Điều chỉnh kích thước ảnh
+        }
+      }
+    }
+  }
+}
+
+.fourth-section {
+  // text-align: center;
+  padding: 2rem;
+  background-color: #29057a;
+  color: #fff;
+  display: flex;
+
+  .fourth-title {
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      color: plum;
+    }
+  }
+
+  .fourth-content {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+
+    .card {
+      background-size: cover;
+      color: #fff;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .fourth-footer {
+    margin-top: 2rem;
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+
+    p {
+      display: flex;
+      align-items: start;
+
+      img {
+        margin-right: 1rem; // Khoảng cách giữa icon và text
+      }
+      span {
+        font-style: italic; // Chữ in nghiêng
+        margin-right: 170px;
+      }
+    }
+  }
+}
+
+.fifth-section {
+  text-align: center;
+  padding-top: 3rem;
+  background: linear-gradient(to bottom, #925eec, #29057a);
+  color: #fff;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .title {
+    margin-bottom: 50px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .phone-images {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 100px;
+
+    img {
+      // max-width: 100%;
+      height: 500px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.sixth-section {
+  background-color: #4b0082; // Màu tím đậm
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+
+  .title {
+    margin-bottom: 50px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .side {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .phone-image {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 2rem;
+        margin-top: 30px;
+      }
+
+      p {
+        font-size: 1.1rem;
+        max-width: 80%;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+
+    .divider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+      position: relative;
+
+      .divider-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      .divider-line-horizontal {
+        position: absolute;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.2);
+
+        &.top {
+          top: 0;
+          left: -50vw;
+          right: -50vw;
+        }
+
+        &.bottom {
+          bottom: 0;
+          left: -50vw;
+          right: -50vw;
+        }
+      }
+
+      .heart-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+        background-color: #4b0082;
+        padding: 10px;
+      }
+
+      .percentage {
+        font-size: 1.5rem;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+        background-color: #4b0082;
+        padding: 5px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.seventh-section {
+  background: #29057a;
+  padding: 40px 40px 80px 40px;
+  max-width: 100%;
+
+  
+    .privacy-image{
+      max-width: 100%;
+    }
+  
+}
+
+

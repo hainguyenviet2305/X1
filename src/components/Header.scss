@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: start; // Căn giữa logo
+    width: 100%;
+    padding: 15px 40px;
+    background: #29057a; // Màu nền
+    z-index: 556;
+    box-sizing: border-box; // Đảm bảo padding không ảnh hưởng đến chiều rộng
+    margin: 0; // Đảm bảo không có khoảng cách xung quanh
+    // position: fixed;
+  }
+  
+  .logo {
+    width: 100px; 
+    height: auto;
+  }

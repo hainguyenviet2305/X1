@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=San+Francisco:wght@400;700&display=swap');
+
+body {
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .open-modal-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    background: #1E035A; /* Màu nền của modal */
+    padding: 20px;
+    border-radius: 15px;
+    width: 800px;
+    max-width: 90%;
+    color: #fff;   
+    // border: 2px solid;
+    // border-image: linear-gradient(to right, #e289fe, #1E035A) 1;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .close-modal-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    display: flex;
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+    text-align: left;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .modal-image {
+    width: 250px; /* Tăng kích thước ảnh */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    flex: 1;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* Màu của nhãn */
+    font-size: 14px; /* Kích thước chữ của nhãn */
+  }
+  
+  .form-group.inline {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Tạo khoảng cách giữa các trường nhập liệu */
+  }
+  
+  .form-group.inline input {
+    width: calc(50% - 10px);
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    width: 100%;
+    max-width: 300px; /* Giới hạn chiều rộng tối đa */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #696572;
+    border-radius: 25px; /* Bo tròn viền */
+    background: #1E035A; /* Màu nền */
+    color: #fff;
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+    transition: border-color 0.3s; /* Hiệu ứng chuyển đổi màu viền */
+  }
+  
+  .form-group input[type="text"]::placeholder,
+  .form-group input[type="email"]::placeholder,
+  .form-group input[type="password"]::placeholder {
+    color: #fff; /* Màu của placeholder */
+    opacity: 0.7; /* Độ mờ của placeholder */
+  }
+  
+  .form-group input[type="text"]:focus + label,
+  .form-group input[type="email"]:focus + label,
+  .form-group input[type="password"]:focus + label,
+  .form-group input[type="text"]:not(:placeholder-shown) + label,
+  .form-group input[type="email"]:not(:placeholder-shown) + label,
+  .form-group input[type="password"]:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 15px;
+    font-size: 12px;
+    color: #e289fe; /* Màu của nhãn khi focus */
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    color: #e289fe; /* Màu của nhãn */
+  }
+  
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background: #e289fe;
+    border: none;
+    border-radius: 25px; /* Bo tròn viền */
+    color: #0a0a0a;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px; /* Chiều rộng của nút */
+    height: 50px; /* Chiều cao của nút */
+    margin: 0 auto; /* Căn giữa nút */
+  }
+  .helper-text {
+    color: rgb(128, 123, 130); /* Màu của văn bản trợ giúp */
+    font-size: 12px; /* Kích thước chữ của văn bản trợ giúp */
+    margin-top: 10px; /* Khoảng cách phía trên văn bản trợ giúp */
+    margin-bottom: 10px; /* Khoảng cách phía dưới văn bản trợ giúp */
+  }
+
+  

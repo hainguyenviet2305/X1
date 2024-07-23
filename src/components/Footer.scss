@@ -1,0 +1,43 @@
+.footer {
+    background-color: #5810F6; // Màu tím đậm
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  
+    .footer-logo {
+      margin-bottom: 1rem;
+  
+      img {
+        max-width: 100px;
+      }
+    }
+  
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+
+  
+  
+        img {
+          width: 30px;
+          height: 30px;
+          margin-top: 30px;
+          margin-right: 1rem; 
+        }
+    }
+  
+    .footer-bottom {
+      p {
+        margin: 0;
+        font-size: 0.875rem;
+      }
+    }
+  }

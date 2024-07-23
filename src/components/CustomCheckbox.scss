@@ -1,0 +1,53 @@
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border: 2px solid #e289fe;
+    border-radius: 4px;
+    margin-right: 10px;
+    position: relative;
+  }
+  
+  .custom-checkbox input:checked + .checkmark {
+    background-color: #e289fe;
+    border: 2px solid #e289fe;
+  }
+  
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked + .checkmark::after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark::after {
+    left: 4px; /* Điều chỉnh vị trí dấu kiểm */
+    top: 2px; /* Điều chỉnh vị trí dấu kiểm */
+    width: 4px; /* Giảm kích thước chiều rộng dấu kiểm */
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .label-text {
+    color: #fff; /* Adjust the color as needed */
+  }
