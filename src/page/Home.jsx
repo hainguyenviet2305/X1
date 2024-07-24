@@ -26,6 +26,7 @@ import sixthImg1 from "../assets/images/6th-img1.png";
 import sixthImg2 from "../assets/images/6th-img2.png";
 import sixthIcon from "../assets/images/6th-icon.png";
 import seventh from "../assets/images/7th.png";
+import divider from "../assets/images/Divider.png";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 const Home = () => {
@@ -36,8 +37,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
-      <section className="home">
+      {/* <section className="home">
         <Menu />
         <div className="introduction">
           <div className="intro-title">
@@ -68,40 +68,121 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </section> */}
+      <section style={{ backgroundColor: "#29057a" }} className="min-vh-100">
+        <Header />
+        <div className="row">
+          <div className="col-lg-2 ps-5">
+            <Menu />
+          </div>
+          <div className="col-lg-10">
+            <div className="d-flex flex-row">
+              <div
+                style={{
+                  fontSize: "100px",
+                  fontFamily: "Usuzi",
+                  background:
+                    "linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #E289FE 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  WebkitTextStroke: "2px white",
+                }}
+              >
+                BREAKING THE ICE
+                <img
+                  style={{ marginTop: "18px", marginLeft: "30px" }}
+                  alt="Divider"
+                  src={divider}
+                />
+              </div>
+            </div>
+            <div
+              style={{
+                fontSize: "100px",
+                fontFamily: "Usuzi",
+                color: "white",
+              }}
+            >
+              FROM MAI TO REAL LIFE
+            </div>
+          </div>
+        </div>
+
+        <div className="row mt-5">
+          <div className="col-lg-2 ps-5">
+            <img src={group2} alt="group2" className="img-fluid" />
+          </div>
+          <div className="col-lg-4 text-white">
+            <h1>Struggling to communicate and connect with others?</h1>
+            <p>Make it simple for everyone</p>
+            <h1>MAI creates a perfect twin world</h1>
+            <p>
+              where it's easy to speak up, easy to connect, and easy to have
+              each other in life.
+            </p>
+          </div>
+          <div className="col-lg-6">
+            <img src={phoneImage} alt="Phone" className="img-fluid" />
+          </div>
+        </div>
       </section>
       <div className="second-section">
         <div className="second-title">
-          <img src={secondTitle} alt="Articulating Your Experience is Hard"  className="img-fluid"/>
+          <img
+            src={secondTitle}
+            alt="Articulating Your Experience is Hard"
+            className="img-fluid"
+          />
         </div>
         <div className="cards">
           <div className="card1">
-            <img src={Card1} alt="Connect and Parallel World" className="img-fluid"/>
+            <img
+              src={Card1}
+              alt="Connect and Parallel World"
+              className="img-fluid"
+            />
           </div>
           <div className="card2">
-            <img src={Card2} alt="Chat" className="img-fluid"/>
+            <img src={Card2} alt="Chat" className="img-fluid" />
           </div>
           <div className="card3">
-            <img src={Card3} alt="Heal" className="img-fluid"/>
+            <img src={Card3} alt="Heal" className="img-fluid" />
           </div>
         </div>
       </div>
       <div className="third-section">
         <div className="third-title">
-          <img src={thirdTitle} alt="The Beginning of an Emotion-Filled Life"  className="img-fluid"/>
+          <img
+            src={thirdTitle}
+            alt="The Beginning of an Emotion-Filled Life"
+            className="img-fluid"
+          />
         </div>
         <div className="third-content">
           <div className="left">
-            <img src={thirdLeft} alt=""  className="img-fluid"/>
+            <img src={thirdLeft} alt="" className="img-fluid" />
           </div>
           <div className="info-cards">
             <div className="info-card">
-              <img src={third1} alt="Join our parallel world"  className="img-fluid"/>
+              <img
+                src={third1}
+                alt="Join our parallel world"
+                className="img-fluid"
+              />
             </div>
             <div className="info-card">
-              <img src={third2} alt="Talk about it through someone's AI twin"  className="img-fluid"/>
+              <img
+                src={third2}
+                alt="Talk about it through someone's AI twin"
+                className="img-fluid"
+              />
             </div>
             <div className="info-card">
-              <img src={third3} alt="Empathetic Connections"  className="img-fluid"/>
+              <img
+                src={third3}
+                alt="Empathetic Connections"
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -110,20 +191,20 @@ const Home = () => {
       <div className="fourth-section">
         <div className="fourth-left">
           <div className="fourth-title">
-            <img src={fourthTitle} alt=""  className="img-fluid"/>
+            <img src={fourthTitle} alt="" className="img-fluid" />
             <h2>Create Your Personal AI Twin</h2>
           </div>
           <div className="fourth-content">
             <div className="card">
-              <img src={fourthContent1} alt=""  className="img-fluid"/>
+              <img src={fourthContent1} alt="" className="img-fluid" />
             </div>
             <div className="card">
-              <img src={fourthContent2} alt=""  className="img-fluid"/>
+              <img src={fourthContent2} alt="" className="img-fluid" />
             </div>
           </div>
           <div className="fourth-footer">
             <p>
-              <img src={fourthIcon} alt=""  className="img-fluid"/>
+              <img src={fourthIcon} alt="" className="img-fluid" />
               <span>
                 MAI analyzes your communication patterns and preferences,
                 ensuring your AI twin reflects your true self. As a result, your
@@ -134,13 +215,13 @@ const Home = () => {
           </div>
         </div>
         <div className="fourth-right">
-          <img src={fourthImg} alt=""  className="img-fluid"/>
+          <img src={fourthImg} alt="" className="img-fluid" />
         </div>
       </div>
 
       <div className="fifth-section">
         <div className="title">
-          <img src={fifthTitlte} alt=""  className="img-fluid"/>
+          <img src={fifthTitlte} alt="" className="img-fluid" />
         </div>
         <p>
           Unlock your personal AI twin as it evolves over time. This progressive
@@ -148,15 +229,15 @@ const Home = () => {
         </p>
         <p>shape and refine your AI twin.</p>
         <div className="phone-images">
-          <img src={fifthIMG1} alt="Phone 1"  className="img-fluid"/>
+          <img src={fifthIMG1} alt="Phone 1" className="img-fluid" />
         </div>
       </div>
 
       <div className="sixth-section">
-        <img className="title img-fluid" src={sixthTitle} alt=""  />
+        <img className="title img-fluid" src={sixthTitle} alt="" />
         <div className="content">
           <div className="side left-side">
-            <img src={sixthImg1} alt="img" className="phone-image img-fluid"  />
+            <img src={sixthImg1} alt="img" className="phone-image img-fluid" />
             <p>
               After unlocking your AI twin, make it public to let others chat
               with it. You can also chat with other's AI twins as you wish
@@ -165,7 +246,11 @@ const Home = () => {
           <div className="divider">
             <div className="divider-line"></div>
             <div className="divider-line-horizontal top"></div>
-            <img src={sixthIcon} alt="Heart icon" className="heart-icon  img-fluid" />
+            <img
+              src={sixthIcon}
+              alt="Heart icon"
+              className="heart-icon  img-fluid"
+            />
             <div className="divider-line-horizontal bottom"></div>
             <span className="percentage"></span>
           </div>
@@ -191,7 +276,7 @@ const Home = () => {
         />
       </div>
       <SignUpModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
-      <Footer/>
+      <Footer />
     </>
   );
 };

@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Usuzi";
+  src: url("/src/assets/fonts/usuzi/usuziv2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Usuzi";
+  src: url("/src/assets/fonts/usuzi/usuzv2i.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
