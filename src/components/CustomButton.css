@@ -1,0 +1,30 @@
+.custom-button {
+  background-color: #d14ed1;
+  border: none;
+  border-radius: 25px;
+  width: 90px;
+  height: 35px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: white;
+  width: 35px; /* Co lại thành hình tròn */
+  height: 35px; /* Co lại thành hình tròn */
+  border-radius: 50%; /* Bo tròn hoàn toàn */
+}
+
+.arrow {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-button:hover .arrow {
+  color: #d14ed1;
+  transform: translateX(0); /* Đặt lại vị trí mũi tên */
+}

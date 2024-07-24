@@ -8,7 +8,7 @@ import linkedinIcon from '../assets/images/linkedin.png'; // Đường dẫn đ�
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="row footer">
       <h1>DISCOVER THE WORLD </h1>
       <h1>WITHIN YOU</h1>
       <div className="footer-logo">

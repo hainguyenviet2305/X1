@@ -69,120 +69,182 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="second-section">
-        <div className="second-title">
-          <img src={secondTitle} alt="Articulating Your Experience is Hard"  className="img-fluid"/>
-        </div>
-        <div className="cards">
-          <div className="card1">
-            <img src={Card1} alt="Connect and Parallel World" className="img-fluid"/>
+      <div className="row second-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col col-lg-6 second-title">
+              <img
+                src={secondTitle}
+                alt="Articulating Your Experience is Hard"
+                className="img-fluid"
+              />
+            </div>
           </div>
-          <div className="card2">
-            <img src={Card2} alt="Chat" className="img-fluid"/>
-          </div>
-          <div className="card3">
-            <img src={Card3} alt="Heal" className="img-fluid"/>
+          <div className="row cards">
+            <div className="col-12 col-lg-6 card1">
+              <img
+                src={Card1}
+                alt="Connect and Parallel World"
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-6 col-lg-3 card2">
+              <img src={Card2} alt="Chat" className="img-fluid" />
+            </div>
+            <div className="col-6 col-lg-3 card3">
+              <img src={Card3} alt="Heal" className="img-fluid" />
+            </div>
           </div>
         </div>
       </div>
-      <div className="third-section">
-        <div className="third-title">
-          <img src={thirdTitle} alt="The Beginning of an Emotion-Filled Life"  className="img-fluid"/>
-        </div>
-        <div className="third-content">
-          <div className="left">
-            <img src={thirdLeft} alt=""  className="img-fluid"/>
+      <div className=" row third-section">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col col-lg-6 third-title">
+              <img
+                src={thirdTitle}
+                alt="The Beginning of an Emotion-Filled Life"
+                className="img-fluid"
+              />
+            </div>
           </div>
-          <div className="info-cards">
-            <div className="info-card">
-              <img src={third1} alt="Join our parallel world"  className="img-fluid"/>
+
+          <div className="row  third-content">
+            <div className="col-lg-6 left">
+              <img src={thirdLeft} alt="" className="img-fluid" />
             </div>
-            <div className="info-card">
-              <img src={third2} alt="Talk about it through someone's AI twin"  className="img-fluid"/>
-            </div>
-            <div className="info-card">
-              <img src={third3} alt="Empathetic Connections"  className="img-fluid"/>
+            <div className="col-lg-6 info-cards">
+              <div className="info-card">
+                <img
+                  src={third1}
+                  alt="Join our parallel world"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="info-card">
+                <img
+                  src={third2}
+                  alt="Talk about it through someone's AI twin"
+                  className="img-fluid"
+                />
+              </div>
+              <div className="info-card">
+                <img
+                  src={third3}
+                  alt="Empathetic Connections"
+                  className="img-fluid"
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       <div className="fourth-section">
-        <div className="fourth-left">
-          <div className="fourth-title">
-            <img src={fourthTitle} alt=""  className="img-fluid"/>
-            <h2>Create Your Personal AI Twin</h2>
-          </div>
-          <div className="fourth-content">
-            <div className="card">
-              <img src={fourthContent1} alt=""  className="img-fluid"/>
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="fourth-title">
+                <img
+                  src={fourthTitle}
+                  alt="Fourth Title"
+                  className="img-fluid"
+                />
+                <div className="title-text">Create Your Personal AI Twin</div>
+              </div>
+              <div className="row fourth-1">
+                <div className="col-lg-6 fourth-img">
+                  <img
+                    src={fourthContent1}
+                    alt="Content 1"
+                    className="img-fluid"
+                  />
+                </div>
+                <div className="col-lg-6 fourth-img">
+                  <img
+                    src={fourthContent2}
+                    alt="Content 2"
+                    className="img-fluid"
+                  />
+                </div>
+              </div>
+              <div className="row fourth-footer">
+                <div className="col-lg-1 ">
+                  <img src={fourthIcon} alt="Icon" className="img-fluid" />
+                </div>
+                <div className="col-lg-11  footer-text">
+                  MAI analyzes your communication patterns and preferences,
+                  ensuring your AI twin reflects your true self. As a result,
+                  your AI twin can effectively communicate and connect with
+                  other users, creating a dynamic and interactive digital
+                  presence.
+                </div>
+              </div>
             </div>
-            <div className="card">
-              <img src={fourthContent2} alt=""  className="img-fluid"/>
+            <div className="col-lg-6 fourth-right">
+              <img src={fourthImg} alt="Fourth Image" className="img-fluid" />
             </div>
           </div>
-          <div className="fourth-footer">
-            <p>
-              <img src={fourthIcon} alt=""  className="img-fluid"/>
-              <span>
-                MAI analyzes your communication patterns and preferences,
-                ensuring your AI twin reflects your true self. As a result, your
-                AI twin can effectively communicate and connect with other
-                users, creating a dynamic and interactive digital presence.
-              </span>
-            </p>
-          </div>
-        </div>
-        <div className="fourth-right">
-          <img src={fourthImg} alt=""  className="img-fluid"/>
         </div>
       </div>
 
       <div className="fifth-section">
-        <div className="title">
-          <img src={fifthTitlte} alt=""  className="img-fluid"/>
-        </div>
-        <p>
-          Unlock your personal AI twin as it evolves over time. This progressive
-          journey will gradually
-        </p>
-        <p>shape and refine your AI twin.</p>
-        <div className="phone-images">
-          <img src={fifthIMG1} alt="Phone 1"  className="img-fluid"/>
+        <div className="container text-center">
+          <div className="title mb-5">
+            <img src={fifthTitlte} alt="" className="img-fluid" />
+          </div>
+          <p>
+            Unlock your personal AI twin as it evolves over time. This
+            progressive journey will gradually
+          </p>
+          <p>shape and refine your AI twin.</p>
+          <div className="phone-images d-flex justify-content-center mt-5 gap-4">
+            <img src={fifthIMG1} alt="Phone 1" className="img-fluid" />
+          </div>
         </div>
       </div>
 
       <div className="sixth-section">
-        <img className="title img-fluid" src={sixthTitle} alt=""  />
-        <div className="content">
-          <div className="side left-side">
-            <img src={sixthImg1} alt="img" className="phone-image img-fluid"  />
-            <p>
-              After unlocking your AI twin, make it public to let others chat
-              with it. You can also chat with other's AI twins as you wish
-            </p>
-          </div>
-          <div className="divider">
-            <div className="divider-line"></div>
-            <div className="divider-line-horizontal top"></div>
-            <img src={sixthIcon} alt="Heart icon" className="heart-icon  img-fluid" />
-            <div className="divider-line-horizontal bottom"></div>
-            <span className="percentage"></span>
-          </div>
-          <div className="side right-side">
-            <img
-              src={sixthImg2}
-              alt="Phone interface"
-              className="phone-image img-fluid"
-            />
-            <p>
-              Our unique system evaluates compatibility between you and an AI
-              twin, go further by breaking barriers and meeting the real person
-              behind the AI twin.
-            </p>
+        <div className="container ">
+          <img className="title img-fluid col-lg-6" src={sixthTitle} alt="" />
+          <div className="row content">
+            <div className="col-lg-5 col-md-5 side">
+              <img
+                src={sixthImg1}
+                alt="img"
+                className="phone-image img-fluid"
+              />
+              <p>
+                After unlocking your AI twin, make it public to let others chat
+                with it. You can also chat with other's AI twins as you wish
+              </p>
+            </div>
+            <div className="col-lg-2 col-md-2 divider">
+              <div className="divider-line"></div>
+              <div className="divider-line-horizontal top"></div>
+              <img
+                src={sixthIcon}
+                alt="Heart icon"
+                className="heart-icon img-fluid"
+              />
+              <div className="divider-line-horizontal bottom"></div>
+            </div>
+            <div className="col-lg-5 col-md-5 side">
+              <img
+                src={sixthImg2}
+                alt="Phone interface"
+                className="phone-image img-fluid"
+              />
+              <p>
+                Our unique system evaluates compatibility between you and an AI
+                twin, go further by breaking barriers and meeting the real
+                person behind the AI twin.
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
       <div className="seventh-section">
         <img
           src={seventh}
@@ -191,7 +253,7 @@ const Home = () => {
         />
       </div>
       <SignUpModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
-      <Footer/>
+      <Footer />
     </>
   );
 };
