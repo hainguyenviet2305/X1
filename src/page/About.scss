@@ -1,0 +1,45 @@
+.About {
+  background: linear-gradient(to bottom left, #400bb6, #2d067e);
+  padding: 20px 30px;
+
+  .logo {
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
+
+  .about-i {
+    margin-top: 60px;
+    width: 45%;
+
+    .about-text {
+      color: #fff;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+  .carousel-inner {
+    display: flex;
+    overflow: hidden; /* Ensure images are not overflowing */
+    position: relative;
+    width: 100%;
+    
+
+    .d-block {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensure images display as block elements */
+    }
+
+    .carousel-item{
+      margin-top: 100px;
+
+      .d-flex {
+        display: flex;
+        gap: 50px; /* Add space between images */
+        align-items: center; /* Center items vertically */
+      }
+    }
+  }
+}

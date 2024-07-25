@@ -1,77 +1,105 @@
-.home {
-  // position: relative;
-  background: #29057a;
-  color: white;
-  // padding-left: 40px;
-  // overflow: hidden;
-  height: 100vh;
+// .home {
+//   background: #29057a;
+//   color: white;
+//   height: 100vh;
 
-  .introduction {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    position: relative;
-    height: 100%;
+//   .introduction {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 40px;
+//     position: relative;
+//     height: 100%;
 
-    .intro-title {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translate(-50%, -20%);
-      text-align: center;
-    }
+//     .intro-title {
+//       position: absolute;
+//       top: 20px;
+//       left: 50%;
+//       transform: translate(-50%, -20%);
+//       text-align: center;
+//     }
 
-    .intro-content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 1200px;
-      margin-top: 160px;
+//     .intro-content {
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-between;
+//       width: 100%;
+//       max-width: 1200px;
+//       margin-top: 160px;
 
-      h1 {
-        font-size: 1.8rem; // Kích thước chữ lớn hơn
-        font-weight: bold; // Chữ đậm
-        margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
-        line-height: 1.5;
-        padding-right: 140px;
-      }
+//       h1 {
+//         font-size: 1.8rem; // Kích thước chữ lớn hơn
+//         font-weight: bold; // Chữ đậm
+//         margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
+//         line-height: 1.5;
+//         padding-right: 140px;
+//       }
 
-      p {
-        font-size: 1.2rem; // Kích thước chữ nhỏ hơn
-        font-weight: normal; // Chữ thường
-        margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
-        line-height: 1.5; // Chiều cao dòng
-        padding-right: 140px;
-      }
-    }
-    .intro-img {
-      position: absolute;
-      left: -140px;
-      cursor: pointer; // Thêm thuộc tính này để thay đổi con trỏ chuột
-    }
+//       p {
+//         font-size: 1.2rem; // Kích thước chữ nhỏ hơn
+//         font-weight: normal; // Chữ thường
+//         margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
+//         line-height: 1.5; // Chiều cao dòng
+//         padding-right: 140px;
+//       }
+//     }
+//     .intro-img {
+//       position: absolute;
+//       left: -140px;
+//       cursor: pointer; // Thêm thuộc tính này để thay đổi con trỏ chuột
+//     }
 
-    .intro-text {
-      max-width: 50%;
-      margin-left: 30px;
-    }
+//     .intro-text {
+//       max-width: 50%;
+//       margin-left: 30px;
+//     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
+//     p {
+//       font-size: 1.2rem;
+//       margin-bottom: 10px;
+//     }
 
-    .intro-image {
-      max-width: 50%;
-      img {
-        width: 100%;
-        height: auto;
-      }
+//     .intro-image {
+//       max-width: 50%;
+//       img {
+//         width: 100%;
+//         height: auto;
+//       }
+//     }
+//   }
+// }
+.hero-section {
+  background-color: #29057a;
+  min-height: 100vh;
+  .text-white{
+    h1{
+      font-size: 24px;
+      font-weight: 600;
     }
   }
+
+  // .headline {
+  //   font-size: 100px;
+  //   font-family: 'Usuzi', sans-serif;
+  //   background: linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #E289FE 100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-text-stroke: 2px white;
+  // }
+
+  // .divider-img {
+  //   margin-top: 18px;
+  //   margin-left: 30px;
+  // }
+
+  // .subheadline {
+  //   font-size: 100px;
+  //   font-family: 'Usuzi', sans-serif;
+  //   color: white;
+  // }
 }
+
 
 .second-section {
   background-color: #7438f8;

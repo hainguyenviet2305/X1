@@ -32,44 +32,63 @@ import Footer from "../components/Footer";
 const Home = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => setModalIsOpen(true);
-  const closeModal = () => setModalIsOpen(false);
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   return (
     <>
-      {/* <section className="home">
-        <Menu />
-        <div className="introduction">
-          <div className="intro-title">
-            <img
-              src={titleImage}
-              alt="Breaking the Ice: From MAI to Real Life"
-               className="img-fluid"
-            />
-          </div>
-          <div className="intro-content" style={{ position: "relative" }}>
-            <div
-              className="intro-img"
-              onClick={openModal} // Thêm sự kiện onClick để mở modal
-            >
-              <img src={group2} alt="group2"  className="img-fluid"/>
-            </div>
-            <div className="intro-text">
-              <h1>Struggling to communicate and connect with others?</h1>
-              <p>Make it simple for everyone</p>
-              <h1>MAI creates a perfect twin world</h1>
-              <p>
-                where it's easy to speak up, easy to connect, and easy to have
-                each other in life.
-              </p>
-            </div>
-            <div className="intro-image">
-              <img src={phoneImage} alt="Phone"  className="img-fluid"/>
-            </div>
-          </div>
+<section className="hero-section">
+  <Header />
+  <div className="row">
+    <div className="col-lg-2 ps-5">
+      <Menu />
+    </div>
+    <div className="col-lg-10">
+      {/* <div className="d-flex flex-row">
+        <div className="headline">
+          BREAKING THE ICE
+          <img
+            className="divider-img"
+            alt="Divider"
+            src={divider}
+          />
         </div>
-      </section> */}
-      <section style={{ backgroundColor: "#29057a" }} className="min-vh-100">
+      </div>
+      <div className="subheadline">
+        FROM MAI TO REAL LIFE
+      </div> */}
+      <img src={titleImage} alt="" />
+    </div>
+  </div>
+
+  <div className="row mt-5">
+    <div className="col-lg-2 ps-5">
+      <img
+        src={group2}
+        alt="group2"
+        className="img-fluid"
+        onClick={openModal}
+      />
+    </div>
+    <div className="col-lg-4 text-white">
+      <h1>Struggling to communicate and connect with others?</h1>
+      <p>Make it simple for everyone</p>
+      <h1>MAI creates a perfect twin world</h1>
+      <p>
+        where it's easy to speak up, easy to connect, and easy to have
+        each other in life.
+      </p>
+    </div>
+    <div className="col-lg-6">
+      <img src={phoneImage} alt="Phone" className="img-fluid" />
+    </div>
+  </div>
+</section>
+      {/* <section style={{ backgroundColor: "#29057a" }} className="min-vh-100">
         <Header />
         <div className="row">
           <div className="col-lg-2 ps-5">
@@ -110,7 +129,12 @@ const Home = () => {
 
         <div className="row mt-5">
           <div className="col-lg-2 ps-5">
-            <img src={group2} alt="group2" className="img-fluid" />
+            <img
+              src={group2}
+              alt="group2"
+              className="img-fluid"
+              onClick={openModal}
+            />
           </div>
           <div className="col-lg-4 text-white">
             <h1>Struggling to communicate and connect with others?</h1>
@@ -125,7 +149,7 @@ const Home = () => {
             <img src={phoneImage} alt="Phone" className="img-fluid" />
           </div>
         </div>
-      </section>
+      </section> */}
       <div className="row second-section">
         <div className="container">
           <div className="row justify-content-center">

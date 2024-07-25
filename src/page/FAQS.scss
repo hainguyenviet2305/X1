@@ -1,0 +1,154 @@
+.FAQS {
+  background: linear-gradient(to bottom right, #2d067e, #400bb6);
+  padding-bottom: 180px;
+  position: relative;
+  .header1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+
+    .logo {
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+
+    .menu {
+      margin-top: 10px;
+    }
+  }
+
+  .Fcontent {
+    margin: 100px 0 0 0px;
+
+    .img1 {
+      padding-left: 20px;
+    }
+
+    .img2 {
+      position: absolute;
+      left: 0;
+      top: 855px;
+
+    }
+
+    .faq-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0 20px 0;
+      border-bottom: 1px solid #8066b9;
+      margin: 20px 20px 0 20px;
+      transition: color 2s;
+      cursor: pointer;
+
+
+      &.active {
+        border-bottom: none;
+      }
+
+      .faq-button {
+        background-color: #e289fe;
+        border: none;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 24px;
+        width: 80px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        margin-left: 30px;
+      }
+
+      .faq-text {
+        font-size: 28px;
+        font-weight: 600;
+        color: #fff;
+      }
+
+      &::after {
+        content: "";
+        display: none;
+      }
+
+      &:hover .faq-text {
+        color: #e289fe;
+      }
+      &.active .faq-text {
+        color: #e289fe;
+      }
+
+      // &:hover .faq-button {
+      //   background-color: #fff;
+      //   color: #e289fe;
+      //   width: 40px;
+      //   height: 40px;
+      // }
+    }
+    .faq-answer {
+      font-size: 16px;
+      color: #fff;
+      margin: 0 20px;
+
+      .answer {
+        margin-top: 20px;
+      }
+
+      .faq-divider {
+        margin-top: 20px;
+        border-bottom: 1px solid #8066b9;
+      }
+    }
+
+    .faq-item.active + .faq-answer .faq-divider {
+      display: block;
+    }
+    @media (max-width: 1100px) {
+      .img2 {
+       display: none;
+     }
+   }
+  }
+
+}
+@media (max-width: 767.98px) {
+  .FAQS {
+    padding-bottom: 80px;
+    .header1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu {
+        flex-grow: 0;
+        margin-right: 10px;
+        margin-top: 0;
+        padding-top: 10px;
+      }
+
+      .logo {
+        margin: 0;
+        padding: 10px;
+      }
+    }
+
+
+    .img1 {
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .Fcontent{
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
