@@ -5,10 +5,18 @@ import Menu from "../components/Menu";
 import logo from "../assets/images/Header.png";
 import img1 from "../assets/images/FAQS.png";
 import img7 from "../assets/images/img7.png";
+import star from "../assets/images/star.png";
 import Footer from "../components/Footer";
-
+import { useNavigate } from "react-router-dom";
+import divider from "../assets/images/Divider.png";
 
 const FAQS = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
@@ -24,7 +32,7 @@ const FAQS = () => {
       <div className=" FAQS min-vh-100">
         <div className="header1">
           <div className="logo">
-            <img src={logo} alt="" className="img-fluid" />
+            <img src={logo} alt="" className="img-fluid" onClick={handleLogoClick}/>
           </div>
           <div className="menu">
             <Menu />
@@ -33,8 +41,13 @@ const FAQS = () => {
 
         <div className="row Fcontent">
           <div className="col-lg-5 ">
-            <img className="img1 img-fluid float-md-l" src={img1} alt="" />
-            <img className="img2 d-none d-md-block" src={img7} alt="" />
+            <div className="col-lg-9 blog-i">
+                <div className="headline">
+                  FAQS
+                  <img className="divider-img" alt="Divider" src={divider} />
+                </div>
+                </div>
+            <img className="img2 d-none d-lg-block" src={img7} alt="" />
           </div>
           <div className="col-lg-7">
             <div className="faq-cc">
@@ -43,6 +56,7 @@ const FAQS = () => {
                 onClick={() => toggleFAQ(0)}
               >
                 <div className="faq-text">
+                <img className="star-icon img-fluid" src={star} alt="" />
                   Can an artificial intelligence chatbot
                 </div>
                 <button className="faq-button">
@@ -84,6 +98,7 @@ const FAQS = () => {
                 onClick={() => toggleFAQ(1)}
               >
                 <div className="faq-text">
+                <img className="star-icon img-fluid" src={star} alt="" />
                   Can an artificial intelligence chatbot assistant, provide
                   responses to patient questions that are of comparable quality
                   and empathy to those written by physicians?
@@ -111,6 +126,7 @@ const FAQS = () => {
                 onClick={() => toggleFAQ(2)}
               >
                 <div className="faq-text">
+                <img className="star-icon img-fluid" src={star} alt="" />
                   More than 50% of people with mental disorders refuse to speak
                   with a professional
                 </div>
@@ -137,6 +153,7 @@ const FAQS = () => {
                 onClick={() => toggleFAQ(3)}
               >
                 <div className="faq-text">
+                <img className="star-icon img-fluid" src={star} alt="" />
                   Why AI could help bridge the gap between doctors and patients,
                   therapists and clients.
                 </div>
@@ -163,6 +180,7 @@ const FAQS = () => {
                 onClick={() => toggleFAQ(4)}
               >
                 <div className="faq-text">
+                <img className="star-icon img-fluid" src={star} alt="" />
                   Privacy and security is our top priority
                 </div>
                 <button className="faq-button">

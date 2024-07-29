@@ -1,14 +1,89 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./BlogDetail.scss";
 import img5 from "../assets/images/img5.png";
 import img6 from "../assets/images/img6.png";
 import img2 from "../assets/images/img2.png";
+import Menu from "../components/Menu";
+import logo from "../assets/images/Header.png";
+import { useNavigate } from "react-router-dom";
+import Footer from "../components/Footer";
 
 const BlogDetail = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
+  const [currentItem, setCurrentItem] = useState(0);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+
+  const items = [
+    {
+      img: img6,
+      text: "AFTER ALL, WITH AI, THERE’S TRULY NO RUSH. NO EXPECTATIONS. NO PRESSURE.",
+    },
+    {
+      img: img2,
+      text: "AFTER ALL, WITH AI, THERE’S TRULY NO RUSH. NO EXPECTATIONS. NO PRESSURE.",
+    },
+  ];
+
+  const prevItem = () => {
+    setCurrentItem((prev) => (prev === 0 ? items.length - 1 : prev - 1));
+  };
+
+  const nextItem = () => {
+    setCurrentItem((prev) => (prev === items.length - 1 ? 0 : prev + 1));
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="detail-container">
-        <div className="col-lg-8">
+        <div className="p1">
+          <div className="header1">
+            <div className="logo">
+              <img
+                src={logo}
+                alt=""
+                className="img-fluid"
+                onClick={handleLogoClick}
+              />
+            </div>
+            <div className="menu">
+              <Menu />
+            </div>
+          </div>
+          <div className="p1-title">
+            Reflections: “A Letter to My Past Self ” by Phil De Vera
+          </div>
+
+          <div className="text-container">
+            <div className="custom-text">a letter to my past self</div>
+            <div className="custom-text">introspection</div>
+            <div className="custom-text">reflection</div>
+            <div className="custom-text">new year</div>
+          </div>
+
+          <div className="date-container">
+            <div className="line"></div>
+            <div className="date-text">23.12.2024</div>
+            <div className="line"></div>
+          </div>
+        </div>
+
+        <div className="col-lg-8 sc">
           <div className="detail-titles">
             <div className="title-icon">
               <img src={img5} alt="" className="img-fluid" />
@@ -107,7 +182,35 @@ const BlogDetail = () => {
 
           <div className="detail-title2">Your Current Your Self &lt;3</div>
         </div>
-
+        <div className="row dt-ft">
+      <div className="col-lg-1 col-2 d-flex align-items-center justify-content-center">
+        <button className="arrow left-arrow" onClick={prevItem}>
+          &lt;
+        </button>
+      </div>
+      {items.map((item, index) => (
+        <div
+          className={`col-lg-5 col-8 ft ${
+            index === currentItem ||
+            (isLargeScreen && index === (currentItem + 1) % items.length)
+              ? "active"
+              : "hidden"
+          }`}
+          key={index}
+        >
+          <img src={item.img} alt="" className="img-fluid AI" />
+          <div className="ft-text">{item.text}</div>
+        </div>
+      ))}
+      <div className="col-lg-1 col-2 d-flex align-items-center justify-content-center">
+        <button className="arrow right-arrow" onClick={nextItem}>
+          &gt;
+        </button>
+      </div>
+    </div>
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </>
   );

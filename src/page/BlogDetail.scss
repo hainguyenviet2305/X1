@@ -1,4 +1,79 @@
 .detail-container {
+  .p1 {
+    background: linear-gradient(to bottom right, #2d067e, #400bb6);
+    width: 100%;
+    padding-bottom: 150px;
+
+    .header1 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 20px;
+
+      .logo {
+        cursor: pointer;
+        position: fixed;
+        z-index: 1000;
+        img {
+          width: 150px;
+          height: auto;
+          cursor: pointer;
+        }
+      }
+
+      .menu {
+        margin-top: 30px;
+      }
+    }
+
+    .p1-title {
+      font-size: 70px;
+      font-family: "San Francisco";
+      color: #fff;
+      text-align: center;
+      margin: 80px 250px 0 250px;
+    }
+
+    .text-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin: 0 480px;
+
+      .custom-text {
+        background: #8a6bbf;
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        font-family: "San Francisco";
+      }
+    }
+
+    .date-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+
+      .line {
+        display: inline-block;
+        width: 46px;
+        height: 9px;
+        background-color: #fff;
+      }
+
+      .date-text {
+        color: #fff;
+        font-size: 18px;
+        font-family: "San Francisco";
+      }
+    }
+  }
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,6 +94,7 @@
       font-weight: 600;
     }
   }
+
   .detail-img {
     display: flex;
     flex-direction: column;
@@ -48,29 +124,108 @@
     font-size: 28px;
     font-weight: 600;
   }
+
+  .dt-ft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 160px 0;
+
+    .arrow {
+      font-size: 48px;
+      margin: 0 10px;
+      background: #fff;
+      color: #000;
+      border: none;
+    }
+
+    .ft {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        display: flex;
+      }
+
+      .AI {
+        width: 250px;
+        height: 150px;
+      }
+
+      .ft-text {
+        font-size: 28px;
+        text-align: start;
+        margin-left: 10px;
+        font-weight: 600;
+        // margin: 18px 20px;
+      }
+    }
+  }
 }
 
-
-/* Media Query cho màn hình nhỏ hơn 768px */
 @media (max-width: 768px) {
   .detail-container {
-    margin: 0 15px; /* Đảm bảo có margin bên trái và bên phải */
-  }
+    width: 100%;
+    .p1 {
+      .menu {
+        position: fixed;
+        right: 25px;
+        top: 0px;
+      }
 
-  .detail-titles {
-    gap: 5px; /* Điều chỉnh gap cho màn hình nhỏ hơn */
-  }
+      .p1-title {
+        margin: 50px;
+      }
 
-  .detail-title {
-    font-size: 18px; 
-  }
-  
-  .description {
-    font-size: 14px; 
-  }
+      .text-container {
+        margin: 0 80px;
+        gap: 5px;
+      }
+    }
 
-  .title-icon {
-    width: 88px; 
-    height: 88px;
+    .sc {
+      padding: 15px;
+      .detail-titles {
+        gap: 5px; /* Điều chỉnh gap cho màn hình nhỏ hơn */
+      }
+
+      .detail-title {
+        font-size: 18px;
+      }
+
+      .description {
+        font-size: 14px;
+      }
+
+      .title-icon {
+        width: 88px;
+        height: 88px;
+      }
+    }
+
+    .dt-ft {
+      .ft {
+        .AI {
+          width: 145px;
+          height: 86px;
+        }
+
+        .ft-text {
+          font-size: 20px;
+          text-align: start;
+          margin-left: 10px;
+        }
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .active {
+        display: flex;
+      }
+    }
   }
 }

@@ -1,105 +1,145 @@
-// .home {
-//   background: #29057a;
-//   color: white;
-//   height: 100vh;
-
-//   .introduction {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     padding: 40px;
-//     position: relative;
-//     height: 100%;
-
-//     .intro-title {
-//       position: absolute;
-//       top: 20px;
-//       left: 50%;
-//       transform: translate(-50%, -20%);
-//       text-align: center;
-//     }
-
-//     .intro-content {
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-between;
-//       width: 100%;
-//       max-width: 1200px;
-//       margin-top: 160px;
-
-//       h1 {
-//         font-size: 1.8rem; // Kích thước chữ lớn hơn
-//         font-weight: bold; // Chữ đậm
-//         margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
-//         line-height: 1.5;
-//         padding-right: 140px;
-//       }
-
-//       p {
-//         font-size: 1.2rem; // Kích thước chữ nhỏ hơn
-//         font-weight: normal; // Chữ thường
-//         margin: 0 0 1rem 0; // Khoảng cách giữa các đoạn văn
-//         line-height: 1.5; // Chiều cao dòng
-//         padding-right: 140px;
-//       }
-//     }
-//     .intro-img {
-//       position: absolute;
-//       left: -140px;
-//       cursor: pointer; // Thêm thuộc tính này để thay đổi con trỏ chuột
-//     }
-
-//     .intro-text {
-//       max-width: 50%;
-//       margin-left: 30px;
-//     }
-
-//     p {
-//       font-size: 1.2rem;
-//       margin-bottom: 10px;
-//     }
-
-//     .intro-image {
-//       max-width: 50%;
-//       img {
-//         width: 100%;
-//         height: auto;
-//       }
-//     }
-//   }
-// }
-.hero-section {
+.hm {
   background-color: #29057a;
   min-height: 100vh;
-  .text-white{
-    h1{
+  .header1 {
+    padding: 20px;
+  }
+
+  .logo {
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    img {
+      width: 150px;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  .menu {
+    margin-top: 30px;
+  }
+
+  .text-white {
+    h1 {
+      font-family: "San Francisco";
       font-size: 24px;
       font-weight: 600;
     }
   }
 
-  // .headline {
-  //   font-size: 100px;
-  //   font-family: 'Usuzi', sans-serif;
-  //   background: linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #E289FE 100%);
-  //   -webkit-background-clip: text;
-  //   -webkit-text-fill-color: transparent;
-  //   -webkit-text-stroke: 2px white;
-  // }
+  .headline {
+    font-size: 80px;
+    font-family: "Usuzi", sans-serif;
+    background: linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #e289fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
 
-  // .divider-img {
-  //   margin-top: 18px;
-  //   margin-left: 30px;
-  // }
+  .divider-img {
+    margin-top: 18px;
+    margin-left: 30px;
+  }
 
-  // .subheadline {
-  //   font-size: 100px;
-  //   font-family: 'Usuzi', sans-serif;
-  //   color: white;
-  // }
+  .subheadline {
+    font-size: 80px;
+    font-family: "Usuzi", sans-serif;
+    color: white;
+  }
+
+  .ctn-hand {
+    position: relative;
+    width: 140px; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+    height: 140px; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .rotating-text {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      animation: rotate 10s linear infinite; /* Animation xoay */
+
+      text {
+        font-size: 10px; /* Điều chỉnh kích thước font chữ theo nhu cầu của bạn */
+        fill: #e289fe; /* Màu sắc của văn bản */
+      }
+    }
+
+    .hand-shake {
+      width: 50px; /* Điều chỉnh kích thước theo nhu cầu của bạn */
+      height: auto;
+      animation: shake 0.5s infinite; /* Animation lắc */
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(10deg);
+      }
+      50% {
+        transform: rotate(0deg);
+      }
+      75% {
+        transform: rotate(-10deg);
+      }
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header1 {
+      width: 100%;
+      padding-bottom: 0px;
+      margin-bottom: 0;
+
+      .headline {
+        padding-top: 150px;
+      }
+      .headline,
+      .subheadline {
+        font-size: 52px; 
+        -webkit-text-stroke: 1px white;
+      }
+
+      .divider-img {
+        width: 50px; 
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    }
+
+    .menu {
+      position: fixed;
+      right: 25px;
+      top: 0px;
+    }
+
+    .row {
+      flex-direction: column; 
+      align-items: center; 
+    }
+
+    .text-white {
+      text-align: start;
+    }
+  }
 }
-
 
 .second-section {
   background-color: #7438f8;
@@ -107,11 +147,30 @@
 
   .second-title {
     text-align: center;
-    margin-bottom: 20px; // Điều chỉnh margin nếu cần
+    margin-bottom: 20px;
+    .headline {
+      position: relative;
+      display: inline-block;
+      font-size: 52px; 
+      color: white; 
+      -webkit-text-fill-color: #fff;
+      -webkit-text-stroke: none;
+      padding-right: 40px;
+    
+      .ic1 {
+        position: absolute;
+        top: 0%;
+        right: 0; 
+        transform: translateX(-345%);
+        width: 54px; 
+        height: 52px;
+      }
+    }
 
     img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 
@@ -137,8 +196,15 @@
       .card1,
       .card2,
       .card3 {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
         img {
-          height: 150px;
+          margin: 0;
+          padding: 0;
+          height: auto;
         }
       }
 
@@ -148,7 +214,7 @@
 
       .card2,
       .card3 {
-        flex: 0 0 50%;
+        flex: 0 0 48%;
       }
     }
   }
@@ -241,12 +307,13 @@
   .fourth-footer {
     margin-top: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 
     .footer-text {
       color: #fff;
       font-style: italic;
-      padding-left: 10px; // Thêm khoảng cách giữa icon và văn bản
+      padding-left: 10px;
+      font-size: 18px; // Thêm khoảng cách giữa icon và văn bản
     }
   }
   @media (max-width: 768px) {
@@ -269,7 +336,6 @@
     }
   }
 }
-
 
 .fifth-section {
   text-align: center;
@@ -304,7 +370,7 @@
 }
 
 .sixth-section {
-  background-color: #29057a; 
+  background-color: #29057a;
   color: white;
   padding: 200px 0;
 

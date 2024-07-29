@@ -1,44 +1,147 @@
 .About {
   background: linear-gradient(to bottom left, #400bb6, #2d067e);
-  padding: 20px 30px;
+  .header1 {
+    padding: 20px;
 
-  .logo {
-    img {
-      width: 150px;
-      height: auto;
+    .logo {
+      cursor: pointer;
+      position: fixed;
+      z-index: 1000;
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+    .row {
+      .menu {
+        margin-top: 30px;
+      }
+    }
+
+    .headline {
+      font-size: 100px;
+      font-family: "Usuzi", sans-serif;
+      background: #fff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 2px white;
+    }
+
+    .divider-img {
+      margin-top: 18px;
+      margin-left: 30px;
+    }
+
+
+
+    .about-i {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 40px 0;
+
+      .about-text {
+        margin: 20px 50px 20px 0;
+        font-size: 1.2rem;
+        color: #fff;
+      }
     }
   }
 
-  .about-i {
-    margin-top: 60px;
-    width: 45%;
-
-    .about-text {
-      color: #fff;
-      margin-top: 20px;
-      font-size: 20px;
-    }
+  .ab {
+    padding-bottom: 100px;
   }
-  .carousel-inner {
-    display: flex;
-    overflow: hidden; /* Ensure images are not overflowing */
+
+  .slider {
+    overflow: hidden;
     position: relative;
     width: 100%;
-    
+    height: 300px;
 
-    .d-block {
-      max-width: 100%;
-      height: auto;
-      display: block; /* Ensure images display as block elements */
+    .slide-track {
+      display: flex;
+      width: calc(200%);
+      animation: scroll 20s linear infinite;
     }
 
-    .carousel-item{
-      margin-top: 100px;
+    .slide {
+      width: 10%;
+      flex-shrink: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: 0 5px;
+    }
 
-      .d-flex {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+
+    .slide-text {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .slide-subtext {
+      font-size: 18px;
+      font-weight: 600;
+      color: #e289fe;
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .About {
+    .header1 {
+      .row {
+        .menu {
+          margin-top: 0px;
+        }
+      }
+
+      .headline {
+        font-size: 70px;
+        flex-direction: row;
+        align-items: flex-end;
+
+        .divider-img {
+          margin-left: 0;
+          margin-top: 20px;
+          width: 60px;
+          margin-left: 20px;
+        }
+      }
+      .about-i {
+        .about-text {
+          margin: 20px 25px 20px 0;
+        }
+      }
+    }
+    .slider {
+      .slide-track {
         display: flex;
-        gap: 50px; /* Add space between images */
-        align-items: center; /* Center items vertically */
+        width: calc(150%);
+      }
+
+      .slide {
+        width: 25%;
+        margin: 0 5px;
       }
     }
   }

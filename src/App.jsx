@@ -1,10 +1,4 @@
-import CustomButton from "./components/CustomButton";
-import CustomCheckbox from "./components/CustomCheckbox";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Menu from "./components/Menu";
-import SignUpModal from "./components/SignUpModal";
-import SuccessMessage from "./components/SuccessMessage";
+import './App.css'
 import About from "./page/About";
 import Blog from "./page/Blog";
 import BlogDetail from "./page/BlogDetail";
@@ -12,15 +6,11 @@ import FAQS from "./page/FAQS";
 import Home from "./page/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from 'react-router-dom';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import ModalCookies from './components/ModalCookies';
 
 function App() {
   return (
     <>
-      {/* <Blog/> */}
-      {/* <Home /> */}
-      {/* <BlogDetail/> */}
-      {/* <FAQS /> */}
       <div>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -28,6 +18,7 @@ function App() {
         <Route path="/faq" element={<FAQS />} />
         <Route path="/detail" element={<BlogDetail/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/cookies" element={<ModalCookies/>} />
       </Routes>
     </div>
     </>

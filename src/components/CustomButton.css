@@ -15,7 +15,7 @@
   background-color: white;
   width: 35px; /* Co lại thành hình tròn */
   height: 35px; /* Co lại thành hình tròn */
-  border-radius: 50%; /* Bo tròn hoàn toàn */
+  border-radius: 50%;
 }
 
 .arrow {
