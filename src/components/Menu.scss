@@ -42,7 +42,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
 
     .menu-link {
       color: #fafafa !important;
@@ -58,7 +57,7 @@
       }
     }
     .menu-link.active {
-      color: #ff69b4 !important; // Màu hồng cho mục menu hiện tại
+      color: #E289FE !important; // Màu hồng cho mục menu hiện tại
     }
   }
 

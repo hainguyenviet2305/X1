@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+}
 .hm {
   background-color: #29057a;
   min-height: 100vh;
@@ -8,45 +11,65 @@
   .logo {
     cursor: pointer;
     position: fixed;
+
     z-index: 1000;
     img {
-      width: 150px;
+      width: 100px;
       height: auto;
       max-width: 100%;
     }
+  }
+
+  .t1{
+    margin-top: 80px;
+  }
+
+  .pointer{
+    cursor: pointer;
   }
 
   .menu {
     margin-top: 30px;
   }
 
+  .pointer {
+    cursor: pointer;
+  }
+
   .text-white {
+    font-family: "San Francisco Text";
     h1 {
-      font-family: "San Francisco";
+      font-family: "San Francisco Text";
       font-size: 24px;
       font-weight: 600;
     }
+    p{
+      font-weight: 10;
+    }
   }
 
-  .headline {
-    font-size: 80px;
-    font-family: "Usuzi", sans-serif;
-    background: linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #e289fe 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px white;
-  }
+  // .headline {
+  //   margin-top: 100px;
+  //   font-size: 80px;
+  //   font-family: "Usuzi", sans-serif;
+  //   background: linear-gradient(90deg, rgba(226, 137, 254, 0) 0%, #e289fe 100%);
+  //   -webkit-background-clip: text;
+  //   -webkit-text-fill-color: transparent;
+  //   -webkit-text-stroke: 2px white;
+  //   line-height: 0.9;
+  // }
 
-  .divider-img {
-    margin-top: 18px;
-    margin-left: 30px;
-  }
+  // .divider-img {
+  //   margin-top: 18px;
+  //   margin-left: 30px;
+  // }
 
-  .subheadline {
-    font-size: 80px;
-    font-family: "Usuzi", sans-serif;
-    color: white;
-  }
+  // .subheadline {
+  //   font-size: 80px;
+  //   font-family: "Usuzi", sans-serif;
+  //   color: white;
+  //   line-height: 0.9;
+  // }
 
   .ctn-hand {
     position: relative;
@@ -63,8 +86,8 @@
       animation: rotate 10s linear infinite; /* Animation xoay */
 
       text {
-        font-size: 10px; /* Điều chỉnh kích thước font chữ theo nhu cầu của bạn */
-        fill: #e289fe; /* Màu sắc của văn bản */
+        font-size: 10px; 
+        fill: #e289fe; 
       }
     }
 
@@ -113,12 +136,12 @@
       }
       .headline,
       .subheadline {
-        font-size: 52px; 
+        font-size: 52px;
         -webkit-text-stroke: 1px white;
       }
 
       .divider-img {
-        width: 50px; 
+        width: 50px;
         margin-top: 10px;
         margin-left: 10px;
       }
@@ -131,8 +154,8 @@
     }
 
     .row {
-      flex-direction: column; 
-      align-items: center; 
+      flex-direction: column;
+      align-items: center;
     }
 
     .text-white {
@@ -141,8 +164,12 @@
   }
 }
 
+.row {
+  margin-right: 0 !important; /* Hoặc bạn có thể sử dụng unset */
+}
+
 .second-section {
-  background-color: #7438f8;
+  background-color: #7438F8;
   padding: 40px 0;
 
   .second-title {
@@ -151,18 +178,18 @@
     .headline {
       position: relative;
       display: inline-block;
-      font-size: 52px; 
-      color: white; 
+      font-size: 52px;
+      color: white;
       -webkit-text-fill-color: #fff;
       -webkit-text-stroke: none;
       padding-right: 40px;
-    
+
       .ic1 {
         position: absolute;
         top: 0%;
-        right: 0; 
-        transform: translateX(-345%);
-        width: 54px; 
+        right: 0;
+        transform: translateX(-315%);
+        width: 54px;
         height: 52px;
       }
     }
@@ -224,7 +251,6 @@
   background-color: #29057a;
   padding-top: 120px;
   color: #fff;
-
   .third-title {
     text-align: center;
     margin-bottom: 30px;
@@ -237,6 +263,8 @@
 
   .third-content {
     padding-top: 50px;
+    display: flex;
+    align-items: center;
 
     .left {
       padding: 10px;
@@ -248,20 +276,26 @@
       }
     }
 
-    .info-cards {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 20px;
-      margin: 50px 0;
+    .info-card {
+      background-color: #5e3b9e;
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 2px solid #e3d7fe;
 
-      .info-card {
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-        }
+      .card-text {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "San Francisco Text";
+        font-weight: normal;
       }
+    }
+
+    .info-card .icon {
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
     }
   }
 
@@ -313,7 +347,8 @@
       color: #fff;
       font-style: italic;
       padding-left: 10px;
-      font-size: 18px; // Thêm khoảng cách giữa icon và văn bản
+      font-size: 18px;
+      font-family: "San Francisco Text";
     }
   }
   @media (max-width: 768px) {
@@ -340,7 +375,7 @@
 .fifth-section {
   text-align: center;
   padding-top: 3rem;
-  background: linear-gradient(to bottom, #925eec, #29057a);
+  background: #29057a;
   color: #fff;
 
   h1 {
@@ -352,7 +387,9 @@
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 18px;
+    font-family: "San Francisco Text";
+    margin-left: 260px;
   }
 
   .phone-images {
@@ -363,8 +400,9 @@
 
     img {
       // max-width: 100%;
-      height: 500px;
+      height: 700px;
       border-radius: 10px;
+      position: relative;
     }
   }
 }
@@ -388,17 +426,18 @@
       align-items: center;
       margin-bottom: 2rem;
 
-      .phone-image {
+      .phone-images {
         width: 100%;
         max-width: 400px;
         margin-bottom: 2rem;
         margin-top: 30px;
+        position: relative;
       }
 
       p {
-        font-size: 1.1rem;
-        max-width: 80%;
-        line-height: 1.5;
+        font-size: 20px;
+        font-family: "San Francisco Text";
+        font-weight: bold;
         text-align: center;
       }
     }
@@ -452,10 +491,10 @@
 
 .seventh-section {
   background: #29057a;
-  padding: 40px 40px 80px 40px;
+  padding: 0px 40px 40px 40px;
   max-width: 100%;
 
   .privacy-image {
-    max-width: 100%;
+    width: 1430px;
   }
 }

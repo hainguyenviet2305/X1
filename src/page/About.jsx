@@ -11,7 +11,7 @@ import a6 from "../assets/images/p6.png";
 import a7 from "../assets/images/p7.png";
 import a8 from "../assets/images/p8.png";
 import "./About.scss";
-import divider from "../assets/images/Divider.png";
+import t4 from "../assets/images/t4.png";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 
@@ -38,12 +38,7 @@ const About = () => {
               <Menu />
             </div>
             <div className="col-lg-9 about-i">
-              <div className="">
-                <div className="headline">
-                  About us
-                  <img className="divider-img" alt="Divider" src={divider} />
-                </div>
-              </div>
+              <img src={t4} className="img-fluid t4" alt="" />
               <div className="about-text col-lg-6 ">
                 To satisfy the passion of making mobile apps, test first and
                 create products for millions of users

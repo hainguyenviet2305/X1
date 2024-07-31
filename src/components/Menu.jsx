@@ -31,7 +31,7 @@ const Menu = () => {
             to="/faq" // Thay thế href bằng to
             className={`menu-link ${location.pathname === '/faq' ? 'active' : ''}`}
           >
-            FAQ
+            FAQS
           </Nav.Link>
           <Nav.Link 
             as={Link} // Sử dụng Link từ react-router-dom

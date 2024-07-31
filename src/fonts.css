@@ -13,8 +13,22 @@
 }
 
 @font-face {
-  font-family: "San Francisco";
-  src: url("/path-to-your-fonts/sanfrancisco.ttf") format("truetype");
+  font-family: "San Francisco Text";
+  src: url("/src/assets/fonts/sanfrancisco/SanFranciscoText-Medium.otf") format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Text";
+  src: url("/src/assets/fonts/sanfrancisco/SanFranciscoText-Regular.otf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "San Francisco Text";
+  src: url("/src/assets/fonts/sanfrancisco/SanFranciscoText-Semibold.ttf") format("truetype");
+  font-weight: bold;
   font-style: normal;
 }

@@ -8,7 +8,7 @@
       position: fixed;
       z-index: 1000;
       img {
-        width: 150px;
+        width: 100px;
         height: auto;
       }
     }
@@ -40,10 +40,16 @@
       align-items: flex-start;
       margin: 40px 0;
 
+      .t4{
+        margin-top: 50px;
+      }
+
       .about-text {
         margin: 20px 50px 20px 0;
-        font-size: 1.2rem;
+        font-size: 20px;
         color: #fff;
+        font-family: "San Francisco Text";
+        font-weight: 600;
       }
     }
   }
@@ -86,13 +92,15 @@
       margin-top: 10px;
       font-size: 28px;
       font-weight: 600;
-      color: #fff;
+      color: #fff;   
+      font-family: "San Francisco Text";
     }
 
     .slide-subtext {
       font-size: 18px;
       font-weight: 600;
       color: #e289fe;
+      font-family: "San Francisco Text";
     }
   }
 

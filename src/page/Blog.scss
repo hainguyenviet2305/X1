@@ -8,7 +8,7 @@
       position: fixed;
       z-index: 1000;
       img {
-        width: 150px;
+        width: 100px;
         height: auto;
       }
     }
@@ -17,18 +17,15 @@
       .menu {
         margin-top: 30px;
       }
+
+      .t2{
+        margin-top: 80px;
+      }
     }
 
-    .headline {
-      display: flex;
-      align-items: flex-end;
-      margin-top: 80px;
-      font-size: 100px;
-      font-family: "Usuzi", sans-serif;
-      background: #fff;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 2px white;
+
+    .pointer {
+      cursor: pointer;
     }
 
     .divider-img {
@@ -43,6 +40,12 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
+
+      .txt {
+        font-family: "San Francisco Text";
+        font-weight: bold;
+        font-size: 20px;
+      }
 
       .ctn-hand {
         position: relative;
@@ -61,6 +64,7 @@
           text {
             font-size: 10px;
             fill: #e289fe;
+            font-family: "San Francisco Text";
           }
         }
 
@@ -138,8 +142,8 @@
           width: 120px;
         }
 
-        .text-white{
-          .txt{
+        .text-white {
+          .txt {
             margin-left: 20px;
           }
         }
@@ -157,11 +161,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      padding: 0 70px;
 
       .blog2-content-title {
         font-size: 52px;
         color: #fff;
         cursor: pointer;
+        font-family: "San Francisco Text";
+        font-weight: bold;
 
         &:hover {
           color: #15b097;
@@ -171,7 +178,9 @@
 
     .blog2-content-content {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
+      font-family: "San Francisco Text";
+      font-weight: normal;
     }
 
     .date-button {
@@ -181,9 +190,16 @@
       margin-top: 20px;
 
       .date {
-        color: #d14ed1;
+        color: #e289fe;
         font-size: 16px;
+        font-family: "San Francisco Text";
+        font-weight: bold;
       }
+    }
+
+    .img-fluid {
+      width: 704px;
+      height: 534px;
     }
     @media (max-width: 767.98px) {
       .blog2-section {
@@ -201,11 +217,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      padding: 0 70px;
 
       .blog3-content-title {
         font-size: 52px;
         color: #fff;
         cursor: pointer;
+        font-family: "San Francisco Text";
+        font-weight: bold;
 
         &:hover {
           color: #15b097;
@@ -215,7 +234,8 @@
 
     .blog3-content-content {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
+      font-family: "San Francisco Text";
     }
 
     .date-button {
@@ -225,9 +245,17 @@
       margin-top: 20px;
 
       .date {
-        color: #d14ed1;
+        color: #e289fe;
         font-size: 16px;
+        font-family: "San Francisco Text";
+        font-weight: bold;
       }
+    }
+
+    .bl-img {
+      width: 704px;
+      height: 534px;
+      border-radius: 30px;
     }
   }
 
@@ -241,11 +269,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      padding: 0 70px;
 
       .blog4-content-title {
         font-size: 52px;
         color: #fff;
         cursor: pointer;
+        font-family: "San Francisco Text";
+        font-weight: bold;
 
         &:hover {
           color: #15b097;
@@ -255,7 +286,8 @@
 
     .blog4-content-content {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
+      font-family: "San Francisco Text";
     }
 
     .date-button {
@@ -265,9 +297,17 @@
       margin-top: 20px;
 
       .date {
-        color: #d14ed1;
+        color: #e289fe;
         font-size: 16px;
+        font-family: "San Francisco Text";
+        font-weight: bold;
       }
+    }
+
+    .bl-img {
+      width: 704px;
+      height: 534px;
+      border-radius: 30px;
     }
   }
   .blog5-section {
@@ -279,11 +319,14 @@
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      padding: 0 70px;
 
       .blog5-content-title {
         font-size: 52px;
         color: #fff;
         cursor: pointer;
+        font-family: "San Francisco Text";
+        font-weight: bold;
 
         &:hover {
           color: #15b097;
@@ -293,7 +336,8 @@
 
     .blog5-content-content {
       color: #fff;
-      font-size: 16px;
+      font-size: 18px;
+      font-family: "San Francisco Text";
     }
 
     .date-button {
@@ -303,9 +347,17 @@
       margin-top: 20px;
 
       .date {
-        color: #d14ed1;
+        color: #e289fe;
         font-size: 16px;
+        font-family: "San Francisco Text";
+        font-weight: bold;
       }
+    }
+
+    .bl-img {
+      width: 704px;
+      height: 534px;
+      border-radius: 30px;
     }
 
     .btn-showmore-container {
@@ -314,7 +366,7 @@
       margin: 100px 0;
 
       .btn-showmore {
-        background-color: #d14ed1;
+        background-color: #e289fe;
         width: 250px;
         height: 60px;
         border-radius: 50px;
@@ -323,7 +375,7 @@
 
         &:hover {
           background-color: #000;
-          color: #d14ed1;
+          color: #e289fe;
         }
       }
     }

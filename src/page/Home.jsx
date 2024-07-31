@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import "./Home.scss";
 import phoneImage from "../assets/images/phoneImg.png";
 import Menu from "../components/Menu";
-import secondTitle from "../assets/images/second-section-title.png";
 import Card1 from "../assets/images/Card1.png";
 import Card2 from "../assets/images/Card2.png";
 import Card3 from "../assets/images/Card3.png";
 import SignUpModal from "../components/SignUpModal";
 import thirdTitle from "../assets/images/third-title.png";
-import third1 from "../assets/images/third-img-r1.png";
-import third2 from "../assets/images/third-img-r2.png";
-import third3 from "../assets/images/third-img-r3.png";
+import st from "../assets/images/second-section-title.png";
 import thirdLeft from "../assets/images/third-img-left.png";
 import fourthImg from "../assets/images/fourth-img.png";
 import fourthTitle from "../assets/images/fourth-title.png";
@@ -18,7 +15,7 @@ import fourthContent1 from "../assets/images/4th-content1.png";
 import fourthContent2 from "../assets/images/4th-content2.png";
 import fourthIcon from "../assets/images/fourth-icon.png";
 import fifthTitlte from "../assets/images/5th-title.png";
-import fifthIMG1 from "../assets/images/5th-img.png";
+import fifthIMG1 from "../assets/images/img10.png";
 import sixthTitle from "../assets/images/6th-title.png";
 import sixthImg1 from "../assets/images/6th-img1.png";
 import sixthImg2 from "../assets/images/6th-img2.png";
@@ -29,27 +26,25 @@ import Footer from "../components/Footer";
 import logo from "../assets/images/Header.png";
 import hand from "../assets/images/Hand.png";
 import { useNavigate } from "react-router-dom";
-import ic1 from "../assets/images/ic1.png";
+import third1 from "../assets/images/icon1.png";
+import third2 from "../assets/images/icon2.png";
+import third3 from "../assets/images/icon3.png";
+import t1 from "../assets/images/t1.png";
 
 
 const Home = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
-  const navigate = useNavigate();
 
   const handleLogoClick = () => {
     navigate("/");
   };
+  const handleClick = (url) => () => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <>
-      <div className="hm">
+      <div className="hm ">
         <div className="header1">
           <div className="logo">
             <img
@@ -64,19 +59,13 @@ const Home = () => {
               <Menu />
             </div>
             <div className="col-lg-10">
-              <div className="d-flex flex-row">
-                <div className="headline">
-                  BREAKING THE ICE
-                  <img className="divider-img" alt="Divider" src={divider} />
-                </div>
-              </div>
-              <div className="subheadline">FROM MAI TO REAL LIFE</div>
+              <img src={t1} className="img-fluid t1" alt="" />
             </div>
           </div>
         </div>
 
-        <div className="row mt-5">
-          <div className="col-lg-2 ps-5" onClick={openModal}>
+        <div className="row mt-5 pointer">
+          <div className="col-lg-2 ps-5 " onClick={handleClick('https://forms.gle/4FLwCm9ufUbe5BpF7')}> 
             <div className="ctn-hand">
               <svg viewBox="0 0 100 100" className="rotating-text">
                 <defs>
@@ -111,11 +100,8 @@ const Home = () => {
         <div className="row second-section">
           <div className="container">
             <div className="row justify-content-center">
-              <div className="col col-lg-8 second-title">
-                <div className="headline">
-                  Articulating your experience is hard
-                  <img className="ic1" alt="ic1" src={ic1} />
-                </div>
+              <div className="col col-lg-7 second-title">
+                <img src={st} alt="" />
               </div>
             </div>
             <div className="row cards">
@@ -135,6 +121,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+
         <div className=" row third-section">
           <div className="container">
             <div className="row justify-content-center">
@@ -151,27 +138,39 @@ const Home = () => {
               <div className="col-lg-6 left">
                 <img src={thirdLeft} alt="" className="img-fluid" />
               </div>
+
               <div className="col-lg-6 info-cards">
-                <div className="info-card">
+                <div className="info-card d-flex flex-column align-items-start">
                   <img
                     src={third1}
                     alt="Join our parallel world"
-                    className="img-fluid"
+                    className="img-fluid icon"
                   />
+                  <div className="card-text">
+                    Join our parrel world, create your AI twin and let others
+                    connect with your AI Twin.
+                  </div>
                 </div>
-                <div className="info-card">
+                <div className="info-card d-flex flex-column align-items-start">
                   <img
                     src={third2}
                     alt="Talk about it through someone's AI twin"
-                    className="img-fluid"
+                    className="img-fluid icon"
                   />
+                  <div className="card-text">
+                    Talk about it through someone's AI twin who understands you.
+                  </div>
                 </div>
-                <div className="info-card">
+                <div className="info-card d-flex flex-column align-items-start">
                   <img
                     src={third3}
                     alt="Empathetic Connections"
-                    className="img-fluid"
+                    className="img-fluid icon"
                   />
+                  <div className="card-text">
+                    Empathetic Connections: Feel like no one understands you?
+                    Your AI twin helps you connect with empathetic listeners.
+                  </div>
                 </div>
               </div>
             </div>
@@ -231,11 +230,10 @@ const Home = () => {
             <div className="title mb-5">
               <img src={fifthTitlte} alt="" className="img-fluid" />
             </div>
-            <p>
+            <p className="col-7 d-flex justify-content-center">
               Unlock your personal AI twin as it evolves over time. This
-              progressive journey will gradually
+              progressive journey will gradually shape and refine your AI twin.
             </p>
-            <p>shape and refine your AI twin.</p>
             <div className="phone-images d-flex justify-content-center mt-5 gap-4">
               <img src={fifthIMG1} alt="Phone 1" className="img-fluid" />
             </div>
@@ -244,7 +242,7 @@ const Home = () => {
 
         <div className="sixth-section">
           <div className="container ">
-            <img className="title img-fluid col-lg-6" src={sixthTitle} alt="" />
+            <img className="title img-fluid col-lg-8" src={sixthTitle} alt="" />
             <div className="row content">
               <div className="col-lg-5 col-md-5 side">
                 <img
@@ -292,8 +290,6 @@ const Home = () => {
           />
         </div>
       </div>
-
-      <SignUpModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
       <Footer />
     </>
   );
